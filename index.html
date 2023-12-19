@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Asyc</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">MORTGAGE APP</h1>
+        <form id="form">
+                <input type="number" id="amount" placeholder="Enter Loan Amount" required/>
+                <input type="number" id="interest_rate" placeholder="Enter Interest Rate" required/>
+                <input type="number" id="duration" placeholder="Enter Duration Time" required/>
+                <div><button type="submit" id="calculate">CALCULATE</button></div>
+        </form>
+
+<div class="content" id="diplay_content">
+                <!-- display to see item -->
+        <div class="table">
+            <table id="monthly">
+                <tr><th>MONTHLY PAYMENT</th><th>AMOUNT</th></tr>
+                <tr>
+                    <td class="title">HOA</td>
+                    <td class="amount" id="m_hoa_amount">#00000000</td>
+                </tr>
+                <tr>
+                    <td class="title">MORTGAGE</td>
+                    <td class="amount" id="m_mortgage_amount">#00000000</td>
+                </tr>
+                <tr>
+                    <td class="title">HOME INSURANCE</td>
+                    <td class="amount" id="m_home_amount">#00000000</td>
+                </tr>
+                <tr>
+                    <td class="title">PROPERTY TAX</td>
+                    <td class="amount" id="m_property_amount">#00000000</td>
+                </tr>
+                <tr>
+                    <td class="title">TOTAL</td>
+                    <td class="amount" id="m_total_amount">#00000000</td>
+                </tr>
+            </table>
+            
+            
+            <table id="monthly">
+                <tr><th>ANNUAL PAYMENT</th><th>AMOUNT</th></tr>
+                <tr>
+                    <td class="title">HOA</td>
+                    <td class="amount" id="a_hoa_amount">#00000000</td>
+                </tr>
+                <tr>
+                    <td class="title">MORTGAGE</td>
+                    <td class="amount" id="a_mortgage_amount">#00000000</td>
+                </tr>
+                <tr>
+                    <td class="title">HOME INSURANCE</td>
+                    <td class="amount" id="a_home_amount">#00000000</td>
+                </tr>
+                <tr>
+                    <td class="title">PROPERTY TAX</td>
+                    <td class="amount" id="a_property_amount">#00000000</td>
+                </tr>
+                <tr>
+                    <td class="title">TOTAL</td>
+                    <td class="amount" id="a_total_amount">#00000000</td>
+                </tr>
+            </table>
+            
+            </div>
+
+            <table id="monthly" class="total">
+                <tr><th>OVERALL TOTAL</th><th>AMOUNT</th></tr>
+                <tr>
+                    <td class="title">TOTAL</td>
+                    <td class="amount" id="total_amount">#00000000</td>
+                </tr>
+            </table>
+            
+            </div>
+        </div>        
+</div>
+
+    <script src="index.js"></script>   
+</body>
+</html>
